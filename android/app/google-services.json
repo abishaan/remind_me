@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "813411419760",
+    "firebase_url": "https://remindme-73b28.firebaseio.com",
+    "project_id": "remindme-73b28",
+    "storage_bucket": "remindme-73b28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813411419760:android:1dddae5ef42fee1680d6b5",
+        "android_client_info": {
+          "package_name": "lk.ctse.flutterapp.remind_me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813411419760-c2nngfn0m74ga02nr0qs17asvjukm9ig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-zfs-sHKz7W7YuKYDtN7ObzIUEQK0Ykk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813411419760-c2nngfn0m74ga02nr0qs17asvjukm9ig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
