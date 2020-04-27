@@ -1,3 +1,9 @@
+// This file is the register page where the user have to register using email
+//resources used to refer:
+//1. https://github.com/davefaliskie/travel_budget/tree/episode_21
+//2. https://github.com/rajayogan/flutter-minimalloginUI
+
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:remind_me/screens/authenticate/welcome_page.dart';

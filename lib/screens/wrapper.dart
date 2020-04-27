@@ -1,3 +1,8 @@
+// This file is used to re-direct the logged in user to the home page
+// and logged out user to the sign in page
+//resources used to refer:
+//1. https://github.com/iamshaunjp/flutter-firebase
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:remind_me/models/user.dart';

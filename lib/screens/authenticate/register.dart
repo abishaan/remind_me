@@ -1,3 +1,9 @@
+// This file is the register page where the user have to register using email
+//resources used to refer:
+//1. https://github.com/davefaliskie/travel_budget/tree/episode_21
+//2. https://rajayogan.com
+//3. https://codesundar.com/flutter-facebook-login
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:remind_me/services/auth.dart';

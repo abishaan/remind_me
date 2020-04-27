@@ -1,3 +1,7 @@
+// This contains all the auth functions.
+//resources used to refer:
+//1. https://github.com/iamshaunjp/flutter-firebase
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import 'package:remind_me/models/user.dart';

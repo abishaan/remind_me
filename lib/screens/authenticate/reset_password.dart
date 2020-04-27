@@ -1,5 +1,6 @@
-import 'dart:math';
-
+// This file is the UI for reset password for login with email
+//resources used to refer:
+//1. https://github.com/davefaliskie/travel_budget/tree/episode_21
 import 'package:flutter/material.dart';
 import 'package:remind_me/services/auth.dart';
 

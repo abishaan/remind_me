@@ -1,3 +1,8 @@
+// This file contains the notification related function
+//resources used to refer:
+//1. https://github.com/RobertBrunhage/water_reminder_app_youtube/tree/develop
+//2. https://github.com/JohannesMilke/local_push_notifications
+
 import 'dart:async';
 import 'dart:io';
 import 'dart:isolate';
