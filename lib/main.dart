@@ -8,6 +8,7 @@ import 'package:remind_me/screens/praveen/home.dart';
 import 'package:remind_me/screens/wrapper.dart';
 import 'package:remind_me/services/auth.dart';
 import 'package:remind_me/screens/authenticate/register.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -15,18 +16,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
     return StreamProvider<User>.value(
       value: AuthService().user,
       child: MaterialApp(
-        initialRoute: '/signin()',
+        initialRoute: '/',
         routes: {
           '/': (context) => Wrapper1(),
           '/register': (context) => Register(),
           '/home': (context) => Home(),
           '/signin': (context) => SignIn(),
           '/welcome': (context) => Welcome(),
-          '/forgotPassword': (context) => ResetPassword()
-
+          '/forgotPassword': (context) => ResetPassword(),
+//          '/createNotification': (context) => CreateNotificationPage()
         }
     ),
     );

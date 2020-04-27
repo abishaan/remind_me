@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:remind_me/services/auth.dart';
+import 'package:remind_me/widget/local_notification.dart';
 
 class Home extends StatelessWidget {
 
@@ -21,6 +22,11 @@ class Home extends StatelessWidget {
               label: Text('logout'))
         ],
       ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: LocalNotificationWidget(),
+      ),
+
     );
   }
 }
