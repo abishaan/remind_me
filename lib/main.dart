@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           '/home': (context) => Home(),
           '/signin': (context) => SignIn(),
           '/welcome': (context) => Welcome(),
-          '/forgotPassword': (context) => ResetPassword(),
+          '/forgotPassword': (context) => ResetPassword()
 //          '/createNotification': (context) => CreateNotificationPage()
         }
     ),

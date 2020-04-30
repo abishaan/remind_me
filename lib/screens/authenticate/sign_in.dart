@@ -17,6 +17,8 @@ import 'package:provider/provider.dart';
 import 'package:remind_me/screens/authenticate/authenticate.dart';
 import 'package:remind_me/models/user.dart';
 import 'package:remind_me/screens/praveen/home.dart';
+import 'package:wave/config.dart';
+import 'package:wave/wave.dart';
 
 class SignIn extends StatefulWidget {
   @override
@@ -52,9 +54,33 @@ class _SignInState extends State<SignIn> {
 
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Stack(
+//        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          Container(
+            height: 700,
+            child: RotatedBox(
+              quarterTurns: 2,
+              child: WaveWidget(
+                config: CustomConfig(
+                  gradients: [
+                    [Colors.deepPurple, Colors.deepPurple.shade200],
+                    [Colors.indigo.shade200, Colors.purple.shade200],
+                  ],
+                  durations: [19440, 10800],
+                  heightPercentages: [0.20, 0.25],
+                  blur: MaskFilter.blur(BlurStyle.solid, 10),
+                  gradientBegin: Alignment.bottomLeft,
+                  gradientEnd: Alignment.topRight,
+                ),
+                waveAmplitude: 0,
+                size: Size(
+                  double.infinity,
+                  double.infinity,
+                ),
+              ),
+            ),
+          ),
           Container(
             child: Stack(
               children: <Widget>[
@@ -62,7 +88,7 @@ class _SignInState extends State<SignIn> {
                   padding: EdgeInsets.fromLTRB(15.0, 60.0, 0.0, 0.0),
                   child: Text('Hello',
                       style: TextStyle(
-                          fontSize: 80.0, fontWeight: FontWeight.bold)),
+                          fontSize: 80.0, fontWeight: FontWeight.bold),),
                 ),
                 Container(
                   padding: EdgeInsets.fromLTRB(15.0, 125.0, 0.0, 0.0),
@@ -82,7 +108,7 @@ class _SignInState extends State<SignIn> {
             ),
           ),
           Container(
-              padding: EdgeInsets.only(top: 1.0, left: 20.0, right: 20.0),
+              padding: EdgeInsets.only(top: 210.0, left: 20.0, right: 20.0),
               child: Form(
                 key: _formKey,
                 child: Column(
@@ -99,7 +125,7 @@ class _SignInState extends State<SignIn> {
                           labelStyle: TextStyle(
                               fontFamily: 'Montserrat',
                               fontWeight: FontWeight.bold,
-                              color: Colors.grey),
+                              color: Colors.black),
                           focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.purple))),
                     ),
@@ -116,7 +142,7 @@ class _SignInState extends State<SignIn> {
                           labelStyle: TextStyle(
                               fontFamily: 'Montserrat',
                               fontWeight: FontWeight.bold,
-                              color: Colors.grey),
+                              color: Colors.black),
                           focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.purple))),
                     ),
@@ -171,7 +197,7 @@ class _SignInState extends State<SignIn> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20.0),
+                    SizedBox(height: 70.0),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
